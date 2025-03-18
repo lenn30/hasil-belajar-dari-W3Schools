@@ -288,3 +288,89 @@ Elemen iframe> dalam HTML digunakan untuk menampilkan sebuah halaman web di dala
 ### Atribut Penting 
 * height dan width: Menentukan tinggi dan lebar iframe.
 * style: Dapat digunakan untuk mengatur gaya CSS, seperti menghapus atau menyesuaikan border.
+
+## Hava Script HTML 
+Elemen script> dalam HTML digunakan untuk menyisipkan atau merujuk pada skrip sisi-klien, seperti JavaScript, yang memungkinkan halaman web menjadi lebih dinamis dan interaktif. 
+* Atribut src: Digunakan untuk menautkan file JavaScript eksternal.
+* Penempatan Skrip: Skrip dapat ditempatkan di bagian <head> atau <body> halaman HTML.
+* Atribut type: Secara default, dianggap sebagai text/javascript, sehingga biasanya tidak perlu ditentukan.
+* Elemen <noscript>: Digunakan untuk menyediakan konten alternatif bagi pengguna yang menonaktifkan JavaScript atau menggunakan browser yang tidak mendukungnya.
+### Penggunaan Utama 
+* Penyisipan Skrip Internal: Menulis kode JavaScript langsung di dalam elemen script>.
+* Penyisipan Skrip Eksternal: Merujuk pada file JavaScript eksternal menggunakan atribut src.
+### Contoh 
+* Skrip Internal:
+  script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  /script>
+* Skrip Eksternal:
+  script src="myscript.js">/script>
+
+## File Path HTML 
+Dalam HTML, jalur berkas (file path) digunakan untuk menentukan lokasi berkas dalam struktur folder situs web. Jalur ini penting saat menautkan berkas eksternal seperti halaman web, gambar, lembar gaya, atau skrip JavaScript. 
+### Jenis Jalur Berkas 
++ Jalur Absolut: Menunjukkan URL lengkap ke sebuah berkas. Contoh: img src="https://www.example.com/images/picture.jpg" alt="Gambar">
++ Jalur Relatif: Menunjukkan lokasi berkas relatif terhadap halaman saat ini. Ada beberapa tipe jalur relatif:
+ * Jalur Relatif ke Folder Saat Ini: Berkas berada di folder yang sama dengan halaman saat ini. Contoh: img src="picture.jpg" alt="Gambar">
+ * Jalur Relatif ke Subfolder: Berkas berada di subfolder dari folder saat ini. Contoh: img src="images/picture.jpg" alt="Gambar">
+ * Jalur Relatif ke Root Folder: Berkas berada di folder root situs web. Contoh: img src="/images/picture.jpg" alt="Gambar">
+ * Jalur Relatif ke Folder Induk: Berkas berada satu tingkat di atas folder saat ini. Contoh: img src="../picture.jpg" alt="Gambar">
+
+## HTML Head Element 
+Elemen head> dalam HTML berfungsi sebagai wadah untuk metadata dan informasi yang tidak ditampilkan langsung pada halaman web, tetapi penting bagi browser dan mesin pencari. Penting untuk pengembangan web yang efektif, memastikan halaman Anda diindeks dengan benar dan memberikan pengalaman pengguna yang optimal.
+### Elemen elemen umum 
+* title>: Menentukan judul halaman yang muncul pada tab browser.
+* meta>: Menyediakan metadata seperti deskripsi, kata kunci, dan pengaturan karakter.
+* link>: Menghubungkan ke sumber eksternal seperti stylesheet atau ikon.
+* style>: Menyisipkan CSS internal untuk menentukan gaya halaman.
+* script>: Menyisipkan atau merujuk ke skrip JavaScript untuk interaktivitas.
+
+## layout HTML 
+Elemen-elemen semantik HTML membantu mendefinisikan struktur dan tata letak halaman web. 
+### Elemen utama yang digunakan dalam pengaturan tata letak
+* header>: Mendefinisikan bagian header untuk dokumen atau bagian tertentu.
+* nav>: Mendefinisikan sekumpulan tautan navigasi.
+* section>: Mendefinisikan bagian dalam dokumen.
+* article>: Mendefinisikan konten yang independen dan mandiri.
+* aside>: Mendefinisikan konten sampingan, seperti sidebar.
+* footer>: Mendefinisikan bagian footer untuk dokumen atau bagian tertentu.
+* details>: Mendefinisikan detail tambahan yang dapat dibuka dan ditutup oleh pengguna.
+* summary>: Mendefinisikan judul untuk elemen details>
+
+### Teknik yang bisa digunakan 
+* Kerangka Kerja CSS: Menggunakan kerangka kerja seperti W3.CSS atau Bootstrap untuk mempercepat pembuatan tata letak.
+* Properti Float CSS: Menggunakan properti float untuk mengatur elemen dalam kolom. Namun, teknik ini memiliki keterbatasan dalam fleksibilitas.
+* Flexbox CSS: Memastikan elemen berperilaku prediktif saat tata letak harus menyesuaikan berbagai ukuran layar dan perangkat tampilan.
+* Grid CSS: Menawarkan sistem tata letak berbasis grid dengan baris dan kolom, memudahkan desain halaman web tanpa harus menggunakan float dan positioning.
+
+## Desain Web Responsif HTML
+Desain Web Responsif adalah pendekatan dalam pengembangan web yang memastikan tampilan dan fungsi situs web menyesuaikan secara optimal dengan berbagai ukuran layar dan perangkat. Tujuannya adalah memberikan pengalaman pengguna yang konsisten dan nyaman, baik pada perangkat desktop, tablet, maupun ponsel pintar. 
+### Komponen Utama 
+* Viewport: Viewport adalah area tampilan konten pada perangkat pengguna. Mengatur viewport memungkinkan kontrol lebih baik terhadap skala dan tata letak halaman. Tag <meta> digunakan untuk mengatur viewport.
+* ersentase dan Satuan Relatif: Menggunakan lebar dalam persentase atau satuan relatif seperti vw (viewport width) memungkinkan elemen menyesuaikan ukurannya sesuai dengan lebar layar. Misalnya, teks dengan ukuran font 10vw akan menyesuaikan ukurannya berdasarkan 10% dari lebar viewport.
+* Persentase dan Satuan Relatif: Menggunakan lebar dalam persentase atau satuan relatif seperti vw (viewport width) memungkinkan elemen menyesuaikan ukurannya sesuai dengan lebar layar. Misalnya, teks dengan ukuran font 10vw akan menyesuaikan ukurannya berdasarkan 10% dari lebar viewport.
+* Media Queries: Media queries memungkinkan penerapan gaya CSS yang berbeda berdasarkan karakteristik perangkat, seperti lebar layar.
+* Framework CSS Responsif: Framework seperti W3.CSS dan Bootstrap menyediakan komponen dan grid sistem yang responsif, memudahkan pengembang dalam membuat tata letak yang fleksibel dan konsisten.
+    * W3.CSS: Framework modern yang mendukung desain responsif secara default dan tidak bergantung pada pustaka JavaScript eksternal.
+    * Bootstrap: Framework populer yang menawarkan sistem grid responsif dan komponen siap pakai untuk mempercepat pengembangan desain responsif.
+
+ ## Elemen Kode Komputer HTML 
+ Dalam HTML, terdapat beberapa elemen yang dirancang khusus untuk menampilkan kode komputer atau teks yang terkait dengan input dan output komputer. 
+ ### Elemen utama 
+ * code>: Digunakan untuk menampilkan potongan kode pemrograman atau perintah. Elemen ini menggunakan font monospace secara default, sehingga cocok untuk menampilkan kode.
+ * pre>: Menyajikan teks dengan mempertahankan spasi dan format asli, termasuk baris baru. Elemen ini sering digunakan bersama <code> untuk menampilkan blok kode dengan format yang terjaga.
+ * kbd>: Merepresentasikan input dari pengguna melalui keyboard, menunjukkan teks yang harus diketik oleh pengguna.
+ * samp>: Menampilkan output atau respon dari komputer atau program.var>: Digunakan untuk merepresentasikan variabel dalam konteks pemrograman atau ekspresi matematika.
+ * var>: Digunakan untuk merepresentasikan variabel dalam konteks pemrograman atau ekspresi matematika.
+
+## Sematik HTML 
+Elemen-elemen semantik dalam HTML5 memberikan makna yang jelas pada struktur halaman web, memudahkan mesin pencari dan pembaca layar untuk memahami konten. 
+### Elemen sematik utama 
+* header>: Bagian atas halaman yang biasanya berisi judul, logo, atau navigasi utama.
+* nav>: Sekumpulan tautan navigasi.
+* section>: Bagian dalam dokumen yang mengelompokkan konten dengan tema tertentu.
+* article>: Konten independen yang bisa berdiri sendiri, seperti posting blog atau artikel berita.
+* aside>: Konten sampingan, seperti sidebar atau informasi tambahan.
+* footer>: Bagian bawah halaman yang biasanya berisi informasi hak cipta, tautan kebijakan privasi, atau informasi kontak.
+*figure> dan <figcaption>: Digunakan untuk menyertakan gambar atau ilustrasi beserta keterangan atau caption
+ 

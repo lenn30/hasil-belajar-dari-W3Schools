@@ -221,7 +221,7 @@ Dalam HTML, tabel digunakan untuk menyajikan data dalam format baris dan kolom. 
 ## List HTML 
 ### Daftar Tidak Berurutan (Unordered List)
 * Menggunakan tag <ul> untuk mendefinisikan daftar.
-* Setiap item dalam daftar ditandai dengan tag <li>.
+* Setiap item dalam daftar ditandai dengan tag li>.
 * Item ditampilkan dengan tanda titik (bullet) secara default.
 ### Daftar Berurutan (Ordered List) 
 * Menggunakan tag <ol> untuk mendefinisikan daftar.
@@ -374,3 +374,60 @@ Elemen-elemen semantik dalam HTML5 memberikan makna yang jelas pada struktur hal
 * footer>: Bagian bawah halaman yang biasanya berisi informasi hak cipta, tautan kebijakan privasi, atau informasi kontak.
 *figure> dan <figcaption>: Digunakan untuk menyertakan gambar atau ilustrasi beserta keterangan atau caption
  
+## Panduan gaya HTML 
+Dalam HTML5, sintaks penulisan kode telah disederhanakan untuk memudahkan pengembang dalam membuat halaman web yang lebih efisien dan terstruktur. 
+### Aturan dasar dalam sintaks HTML 
+* Deklarasi DOCTYPE: Setiap dokumen HTML5 harus dimulai dengan deklarasi DOCTYPE sederhana untuk memastikan kompatibilitas dengan browser
+* Penulisan Tag: Tag HTML tidak peka huruf besar-kecil, namun disarankan untuk menggunakan huruf kecil demi konsistensi dan keterbacaan.
+* Penutupan Tag: Semua elemen harus ditutup dengan benar. Elemen kosong, seperti <img> atau br>, tidak memerlukan penutupan sendiri.
+* Atribut: Atribut harus ditulis dalam huruf kecil, memiliki nilai, dan nilai tersebut harus diapit oleh tanda kutip ganda.
+* Indentasi dan Spasi: Gunakan indentasi konsisten untuk meningkatkan keterbacaan kode.
+* Komentar: Gunakan komentar untuk menjelaskan bagian kode tertentu, yang membantu dalam pemeliharaan dan kolaborasi.
+
+## Entitas HTML 
+Dalam HTML, beberapa karakter memiliki makna khusus dan tidak dapat digunakan langsung dalam teks karena dapat menyebabkan konflik atau interpretasi yang salah oleh browser. Untuk menampilkan karakter-karakter tersebut, digunakan HTML Entities, yaitu kode khusus yang mewakili karakter tertentu. Nama entitas bersifat case-sensitive, artinya penulisan huruf besar dan kecil harus tepat sesuai definisi.
+#### Penulisan HTML Entitas 
+* Nama Entitas (Entity Name): Menggunakan nama yang mudah diingat, diawali dengan tanda ampersand (&) dan diakhiri dengan titik koma (;).
+* Nomor Entitas (Entity Number): Menggunakan kode numerik dari karakter tersebut, diawali dengan &# dan diakhiri dengan titik koma (;).
+### Keuntungan dan kerugiaan 
+* Nama Entitas:
+Keuntungan: Lebih mudah diingat dan dibaca.
+Kerugian: Tidak semua browser mendukung semua nama entitas.
+* Nomor Entitas:
+Keuntungan: Dukungan yang lebih luas di berbagai browser.
+Kerugian: Kurang intuitif dan lebih sulit diingat.
+### Spasi tak terputus
+Entitas &nbsp ; digunakan untuk menambahkan spasi yang tidak akan terputus atau terpecah oleh pergantian baris. Ini berguna untuk menjaga dua kata atau elemen tetap bersama dalam satu baris.
+
+## Simbol HTML 
+Dalam HTML, simbol atau karakter khusus yang tidak tersedia langsung pada keyboard dapat ditambahkan menggunakan HTML Entities. Ini memungkinkan Anda untuk menampilkan berbagai simbol matematika, teknis, atau mata uang dalam halaman web.
+
+## Emoji HTML 
+Emojis adalah karakter dari set karakter UTF-8 yang dapat digunakan dalam HTML untuk menambahkan ekspresi visual pada konten web.
+### Menampilkan emoji 
+* Untuk menampilkan emoji dalam HTML, pastikan halaman Anda menggunakan set karakter UTF-8 dengan menambahkan tag meta berikut di bagian <head
+* Setelah itu, Anda dapat menambahkan emoji langsung ke dalam konten HTML menggunakan entitas numerik.
+
+## Set Karakter HTML 
+Untuk memastikan halaman HTML ditampilkan dengan benar, penting untuk menentukan set karakter (charset) yang digunakan. Set karakter menginformasikan browser bagaimana cara menampilkan teks dan simbol pada halaman web.
+### Mengapa set karakter penting??
+Setiap karakter, termasuk huruf, angka, dan simbol, direpresentasikan oleh kode numerik tertentu. Set karakter menentukan bagaimana kode-kode ini diterjemahkan menjadi karakter yang dapat dibaca oleh manusia. Jika set karakter tidak ditentukan atau ditentukan dengan tidak tepat, browser mungkin menampilkan karakter yang salah atau simbol aneh.
+### Set Karakter dalam HTML4: ISO-8859-1
+Pada HTML versi 4, set karakter default yang digunakan adalah ISO-8859-1, juga dikenal sebagai Latin-1. Set karakter ini mencakup karakter untuk bahasa-bahasa Eropa Barat. Untuk menentukan set karakter ini dalam HTML4. 
+### Set Karakter dalam HTML5: UTF-8
+Dengan diperkenalkannya HTML5, penggunaan set karakter UTF-8 sangat dianjurkan. UTF-8 adalah bagian dari standar Unicode yang mencakup hampir semua karakter dan simbol di dunia, sehingga sangat cocok untuk lingkungan multibahasa. Untuk menentukan UTF-8 sebagai set karakter dalam HTML5.
+
+## Kode URL HTML 
+URL Encoding adalah proses mengonversi karakter ke dalam format yang dapat ditransmisikan melalui Internet. Hal ini diperlukan karena URL hanya dapat menggunakan karakter dari set karakter ASCII. Karakter non-ASCII, seperti karakter dengan aksen atau simbol khusus, harus diubah agar dapat dimasukkan dalam URL.
+### Mengapa URL Encoding Diperlukan?
+URL hanya dapat mengandung karakter tertentu, termasuk huruf (A-Z, a-z), angka (0-9), dan beberapa karakter khusus seperti tanda hubung (-), garis bawah (_), titik (.), dan tilde (~). Karakter lain, termasuk spasi, karakter non-ASCII, dan karakter khusus lainnya, tidak diizinkan dalam URL dan harus dienkode agar sesuai dengan format URL yang valid.
+### Cara Kerja URL Encoding
+URL encoding menggantikan karakter yang tidak diizinkan dengan tanda persen (%) diikuti oleh dua digit heksadesimal yang mewakili nilai ASCII atau Unicode dari karakter tersebut. Misalnya, spasi ( ) digantikan dengan %20 atau tanda plus (+), dan karakter "€" (Euro) digantikan dengan %E2%82%AC.
+## Perbedaan HTML dan XHTML 
+XHTML (Extensible HyperText Markup Language) adalah versi HTML yang lebih ketat dan berbasis XML. Ini dirancang untuk membuat HTML lebih fleksibel dan dapat bekerja dengan format data lain seperti XML.
+### Perbedaan utama 
+* Deklarasi DOCTYPE: XHTML memerlukan deklarasi <!DOCTYPE> yang wajib.
+* Atribut xmlns pada <html>: Atribut ini harus ada untuk menentukan namespace XML.
+* Elemen Wajib: Tag <html>, <head>, <title>, dan <body> harus ada dalam dokumen XHTML.
+* Penulisan Elemen: Semua elemen harus ditulis dalam huruf kecil dan ditutup dengan benar.
+* Penulisan Atribut: Nama atribut harus dalam huruf kecil, nilainya harus diberi tanda kutip, dan minimisasi atribut tidak diperbolehkan.

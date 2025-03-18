@@ -30,4 +30,261 @@ Elemen HTML adalah segalanya dari tag awal hingga tag akhir
    * Gunakan editor online seperti W3Schools untuk mengedit dan melihat hasil langsung.
 
   # Contoh Dasar HTML 
-  
+  ### Deklarasi <!DOCTYPE>
+Deklarasi tersebut <!DOCTYPE>mewakili jenis dokumen, dan membantu browser menampilkan halaman web dengan benar
+Itu hanya boleh muncul satu kali, di bagian atas halaman (sebelum tag HTML apa pun)
+Deklarasi <!DOCTYPE>tidak peka huruf besar/kecil
+Deklarasi <!DOCTYPE>untuk HTML5 adalah: <!DOCTYPE html> 
+
+### Judul HTML 
+Judul HTML didefinisikan dengan tag <h1> <h6>
+
+### Paragraf HTML 
+Paragraf HTML didefinisikan dengan <p>tag
+
+### Tautan HTML 
+Tautan HTML didefinisikan dengan <a>tag
+Tujuan tautan ditetapkan dalam hrefatribut
+Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML.
+
+### Gambar HTML 
+Gambar HTML didefinisikan dengan <img>tag.
+File sumber ( src), teks alternatif ( alt), width, dan height disediakan. 
+
+
+### Cara melihat Sumber HTML 
+1. Melihat Kode Sumber
+   * Tekan CTRL + U di halaman web.
+   * Atau klik kanan di halaman, lalu pilih "Lihat Sumber Halaman".
+   * Tab baru akan terbuka dengan kode HTML halaman tersebut.
+2. Memeriksa Elemen HTML
+   * Klik kanan pada elemen atau area kosong.
+   * Pilih "Periksa" (Inspect) untuk melihat HTML dan CSS yang digunakan.
+   * Anda juga bisa mengedit HTML atau CSS langsung di panel yang terbuka.
+
+
+  ## Elemen HTML 
+  Elemen HTML didefinisikan oleh tag pembuka, konten, dan tag penutup. Contohnya: `<h1>Judul Pertama Saya</h1>` dan `<p>Paragraf pertama saya.</p>`.
+  Elemen-elemen ini dapat bersarang, artinya satu elemen dapat berisi elemen lain. Misalnya, dalam struktur berikut:
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Judul Pertama Saya</h1>
+<p>Paragraf pertama saya.</p>
+</body>
+</html>
+```
+
+
+* `<html>` adalah elemen akar yang mencakup seluruh dokumen, `<body>` berisi konten yang ditampilkan, `<h1>` mendefinisikan judul, dan `<p>` mendefinisikan paragraf.
+* Beberapa elemen HTML tidak memiliki konten atau tag penutup dan disebut elemen kosong, seperti `<br>` yang digunakan untuk membuat baris baru.
+* Meskipun HTML tidak peka huruf besar-kecil, disarankan untuk menggunakan tag huruf kecil. Misalnya, `<p>` dan `<P>` dianggap sama, tetapi penggunaan huruf kecil lebih direkomendasikan.
+
+## Atribut HTML 
+Atribut HTML adalah informasi tambahan yang ditambahkan ke elemen HTML untuk memberikan karakteristik atau perilaku tertentu. Berikut adalah beberapa poin penting mengenai atribut HTML:
+  * Penyertaan Atribut: Semua elemen HTML dapat memiliki atribut yang ditulis dalam tag pembuka elemen tersebut. Atribut biasanya terdiri dari pasangan nama dan nilai, seperti name="value".
+  * Contoh Atribut Umum:
+    * href: Digunakan dalam tag <a> untuk menentukan URL tujuan dari sebuah tautan.
+    * src: Digunakan dalam tag <img> untuk menentukan sumber gambar yang akan ditampilkan.
+    * alt: Digunakan dalam tag <img> untuk memberikan teks alternatif jika gambar tidak dapat ditampilkan.
+    * style: Digunakan untuk menambahkan gaya CSS langsung pada elemen.
+    * lang: Digunakan dalam tag <html> untuk mendeklarasikan bahasa dari halaman web.
+    * title: Memberikan informasi tambahan yang biasanya ditampilkan sebagai tooltip saat kursor diarahkan ke elemen tersebut.
+* Penulisan Atribut:
+    * Huruf Kecil: Meskipun HTML tidak peka huruf besar-kecil, disarankan untuk menulis nama atribut dalam huruf kecil.
+    * Tanda Kutip: Nilai atribut sebaiknya ditulis dengan tanda kutip, terutama jika mengandung spasi atau karakter khusus.
+ 
+## Heading HTML 
+* Tag heading HTML, digunakan untuk menentukan judul atau subjudul pada halaman web. h1 menandakan heading paling penting, sedangkan h6 menandakan heading dengan kepentingan paling rendah.
+* Secara default, browser menambahkan spasi (margin) sebelum dan sesudah heading. Penggunaan heading yang tepat membantu mesin pencari mengindeks struktur dan konten halaman web Anda, serta memudahkan pengguna dalam menavigasi isi halaman. Disarankan untuk menggunakan h1 untuk judul utama, diikuti oleh h2 untuk subjudul, dan seterusnya. Hindari menggunakan heading hanya untuk membuat teks besar atau tebal; gunakan heading sesuai fungsinya untuk menandai struktur dokumen. 
+* Secara default, browser menambahkan spasi (margin) sebelum dan sesudah heading. Penggunaan heading yang tepat membantu mesin pencari mengindeks struktur dan konten halaman web Anda, serta memudahkan pengguna dalam menavigasi isi halaman. Disarankan untuk menggunakan h1 untuk judul utama, diikuti oleh h2 untuk subjudul, dan seterusnya. Hindari menggunakan heading hanya untuk membuat teks besar atau tebal; gunakan heading sesuai fungsinya untuk menandai struktur dokumen. 
+
+## Paragraf HTML 
+* Dalam HTML, elemen p digunakan untuk mendefinisikan sebuah paragraf. Setiap paragraf dimulai pada baris baru, dan browser secara otomatis menambahkan spasi sebelum dan sesudahnya.
+* Perlu diperhatikan bahwa HTML mengabaikan spasi ekstra dan baris baru dalam kode sumber. Misalnya, menambahkan banyak spasi atau baris baru dalam kode HTML tidak akan mempengaruhi tampilan paragraf di browser. 
+* Untuk menambahkan garis horizontal yang memisahkan konten, Anda dapat menggunakan elemen hr. Elemen ini tidak memerlukan tag penutup.
+* Untuk menampilkan teks dengan format yang persis seperti di kode sumber, termasuk spasi dan baris baru, gunakan elemen pre. Teks di dalam elemen pre akan ditampilkan dengan font lebar tetap dan mempertahankan format aslinya.
+
+## Gaya HTML 
+* Atribut style dalam HTML digunakan untuk menambahkan gaya langsung pada elemen, seperti warna, font, ukuran, dan lainnya. 
+* Beberapa properti CSS yang sering digunakan dalam atribut style meliputi:
+    * background-color: Menentukan warna latar belakang elemen.  <body style="background-color:powderblue;">
+    * color: Menentukan warna teks.   <h1 style="color:blue;">Ini adalah heading</h1>
+    * font-family: Menentukan jenis font yang digunakan.   <p style="font-family:verdana;">Ini adalah paragraf dengan font Verdana.</p>
+    * font-size: Menentukan ukuran teks.   <h1 style="font-size:300%;">Ini adalah heading besar</h1>
+    * text-align: Menentukan perataan teks secara horizontal.   <p style="text-align:center;">Teks ini diratakan ke tengah.</p>
+
+## Format Teks HTML 
+Dalam HTML, terdapat beberapa elemen yang digunakan untuk memformat teks agar memiliki makna atau penekanan khusus. Berikut adalah elemen-elemen tersebut beserta fungsinya: 
+* b : Menampilkan teks dengan huruf tebal tanpa memberikan arti penting tambahan.
+* strong : Menandai teks yang penting, biasanya ditampilkan dengan huruf tebal.
+* i : Menampilkan teks dengan huruf miring tanpa penekanan khusus, sering digunakan untuk istilah teknis atau kata dalam bahasa asing.
+* em : Menandai teks yang harus diberi penekanan, biasanya ditampilkan dengan huruf miring.
+* mark : Menyoroti atau menandai teks yang dianggap penting atau relevan.
+* small : Menampilkan teks dengan ukuran lebih kecil.
+* del : Menandai teks yang dihapus atau tidak lagi relevan, biasanya ditampilkan dengan garis tengah.
+* ins : Menandai teks yang baru ditambahkan atau dimasukkan, biasanya ditampilkan dengan garis bawah.
+* sub : Menampilkan teks sebagai subskrip, yaitu teks yang ditulis lebih rendah dari teks normal, sering digunakan dalam rumus kimia.
+* sup : Menampilkan teks sebagai superskrip, yaitu teks yang ditulis lebih tinggi dari teks normal, sering digunakan untuk penomoran pangkat atau catatan kaki.
+
+
+## Elemen Kutipan dan Sitasi HTML 
+Dalam HTML, terdapat beberapa elemen yang digunakan untuk menandai kutipan dan informasi terkait:
+* blockquote>: Digunakan untuk mendefinisikan bagian yang dikutip dari sumber lain. Browser biasanya menampilkan elemen ini dengan indentasi.
+* q>: Digunakan untuk mendefinisikan kutipan singkat dalam baris. Browser biasanya menambahkan tanda kutip di sekitar teks.
+* abbr>: Digunakan untuk mendefinisikan singkatan atau akronim. Atribut title dapat digunakan untuk memberikan deskripsi lengkap saat pengguna mengarahkan kursor ke singkatan tersebut.
+* address>: Digunakan untuk mendefinisikan informasi kontak penulis atau pemilik dokumen atau artikel. Teks dalam elemen ini biasanya ditampilkan dalam huruf miring, dan browser akan menambahkan baris baru sebelum dan sesudah elemen ini.
+* cite>: Digunakan untuk mendefinisikan judul karya kreatif (misalnya, buku, puisi, lagu, film, lukisan, patung, dll.). Teks dalam elemen ini biasanya ditampilkan dalam huruf miring.
+* bdo>: Singkatan dari "Bi-Directional Override", digunakan untuk menimpa arah teks saat ini.
+
+Penggunaan elemen-elemen ini membantu memberikan struktur dan makna tambahan pada konten HTML, yang dapat meningkatkan aksesibilitas dan pemahaman bagi pengguna dan mesin pencari. 
+
+## Komentar HTML 
+* Dalam HTML, komentar digunakan untuk menambahkan catatan atau keterangan dalam kode sumber yang tidak akan ditampilkan oleh browser. Komentar membantu mendokumentasikan kode dan memudahkan pemeliharaan di masa mendatang.
+* Sintaks : <!-- Tulis komentar Anda di sini -->
+* Penggunaan komentar sangat berguna untuk mendokumentasikan kode, memberikan penjelasan, atau menonaktifkan sementara bagian kode saat debugging.
+
+## Warna HTML 
+Dalam HTML, warna dapat ditentukan menggunakan beberapa metode:
+* Nama Warna: Menggunakan nama-nama warna standar yang telah ditentukan.
+* Nilai Heksadesimal (HEX): Menggunakan kode heksadesimal untuk mewakili warna.
+* Nilai RGB: Menentukan warna berdasarkan komposisi warna merah (Red), hijau (Green), dan biru (Blue).
+* Nilai RGBA: Sama seperti RGB, namun dengan tambahan komponen alpha untuk menentukan tingkat transparansi.
+* Nilai HSL: Menentukan warna berdasarkan Hue (corak warna), Saturation (kejenuhan), dan Lightness (kecerahan).
+* Nilai HSLA: Sama seperti HSL, namun dengan tambahan komponen alpha untuk transparansi.
+
+## CSS HTML 
+CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mendesain tampilan elemen-elemen HTML di berbagai media. Dengan CSS, Anda dapat mengontrol layout dari beberapa halaman web sekaligus, sehingga menghemat banyak pekerjaan. 
+Ada tiga cara untuk menambahkan CSS ke dalam elemen HTML: 
+*  Inline CSS: Menggunakan atribut style langsung pada elemen HTML untuk menerapkan gaya khusus pada elemen tersebut.
+*  Internal CSS: Mendefinisikan gaya dalam elemen style> yang ditempatkan di bagian head> dari halaman HTML.
+*  External CSS: Menggunakan file CSS eksternal yang terpisah, yang dihubungkan ke halaman HTML melalui elemen link> di bagian head>.
+Metode yang paling umum adalah menggunakan file CSS eksternal, karena memungkinkan pengendalian tampilan dari beberapa halaman web sekaligus.
+
+## Tautan HTML 
+Dalam HTML, tautan atau hyperlink memungkinkan pengguna untuk berpindah dari satu halaman ke halaman lain atau ke bagian tertentu dalam halaman yang sama. Tautan didefinisikan menggunakan elemen <a>, dengan atribut href yang menunjukkan tujuan tautan.
+### Atribut Target 
+Atribut target menentukan di mana dokumen yang ditautkan akan dibuka. Nilai umum untuk atribut ini meliputi:
+* _self: Membuka tautan di jendela atau tab yang sama (nilai default).
+* _blank: Membuka tautan di jendela atau tab baru.
+* _parent: Membuka tautan di frame induk.
+* _top: Membuka tautan di seluruh jendela browser, menghapus semua frame.
+### URL Absolut vs. Relatif
+* URL Absolut: Menunjukkan alamat web lengkap, termasuk protokol dan nama domain.
+* URL Relatif: Menunjukkan alamat yang relatif terhadap lokasi halaman saat ini.
+### Menggunakan Gambar sebagai Tautan:
+Gambar dapat digunakan sebagai tautan dengan menempatkan elemen img> di dalam elemen a>.
+### Tautan ke Alamat Email:
+Untuk membuat tautan yang membuka program email pengguna dengan alamat tujuan yang sudah terisi, gunakan skema mailto: dalam atribut href.
+### Tombol sebagai Tautan:
+Untuk menggunakan tombol sebagai tautan, Anda dapat menambahkan kode JavaScript pada atribut onclick yang mengarahkan pengguna ke URL tertentu.
+### Atribut title:
+Atribut title memberikan informasi tambahan tentang tautan, yang biasanya ditampilkan sebagai tooltip saat pengguna mengarahkan kursor ke tautan tersebut.
+
+## Gambar HTML 
+Dalam HTML, gambar ditampilkan menggunakan elemen img>, yang merupakan elemen kosong tanpa tag penutup. Elemen ini memiliki beberapa atribut penting yang mengatur sumber dan tampilan gambar.
+### Atribut Utama dalam Elemen 
+* src (source): Menentukan URL atau path dari gambar yang akan ditampilkan.
+* alt (alternate text): Menyediakan teks alternatif yang ditampilkan jika gambar tidak dapat dimuat. Teks ini juga membantu aksesibilitas bagi pengguna dengan keterbatasan penglihatan.
+* width dan height: Menentukan lebar dan tinggi gambar dalam piksel.
+
+## Ikon HTML 
+* Favicon adalah gambar kecil yang ditampilkan di sebelah judul halaman pada tab browser. Untuk menambahkan favicon ke situs web Anda, simpan gambar favicon di direktori root server Anda atau dalam folder seperti "images". Nama umum untuk favicon adalah "favicon.ico". Kemudian, tambahkan elemen link> di dalam bagian <head> pada file HTML Anda, setelah elemen title>.
+* Setelah menyimpan dan memuat ulang file HTML tersebut di browser, favicon Anda akan muncul di sebelah kiri judul halaman pada tab browser. 
+
+## Judul Halaman HTML 
+Setiap halaman web harus memiliki judul yang menggambarkan isi halaman tersebut. Judul halaman ditentukan menggunakan elemen title> yang ditempatkan di dalam bagian head> dari dokumen HTML.
+
+### Pentingnya Judul Halaman 
+* SEO (Search Engine Optimization): Judul halaman digunakan oleh mesin pencari untuk menentukan urutan halaman dalam hasil pencarian. Judul yang jelas dan deskriptif dapat meningkatkan peringkat halaman Anda.
+* Pengalaman Pengguna: Judul yang informatif membantu pengguna memahami konten halaman sebelum mereka membukanya.
+### Tips Membuat Judul yang Baik
+* Deskriptif dan Relevan: Pastikan judul mencerminkan isi halaman secara akurat.
+* Panjang yang Tepat: Mesin pencari biasanya menampilkan sekitar 50-60 karakter pertama dari judul. Usahakan judul tidak terlalu panjang agar tidak terpotong.
+* Hindari Pengulangan Kata Kunci: Gunakan kata kunci seperlunya dan hindari pengulangan yang tidak perlu.
+
+## Tabel HTML 
+Dalam HTML, tabel digunakan untuk menyajikan data dalam format baris dan kolom. Tabel dibuat menggunakan elemen-elemen berikut:
+* table>: Elemen utama yang mendefinisikan tabel.
+* tr> (table row): Mendefinisikan baris dalam tabel.
+* th> (table header): Mendefinisikan sel header dalam tabel, biasanya tampil dengan teks tebal dan terpusat.
+* td> (table data): Mendefinisikan sel data dalam tabel.
+### Atribut Penting pada Tabel
+* border: Menentukan lebar batas (border) tabel.
+* cellpadding: Menentukan jarak antara konten sel dan batas sel.
+* cellspacing: Menentukan jarak antara sel-sel dalam tabel.
+### Penggabungan Sel 
+* colspan: Menggabungkan beberapa kolom menjadi satu sel.
+* rowspan: Menggabungkan beberapa baris menjadi satu sel.
+
+## List HTML 
+### Daftar Tidak Berurutan (Unordered List)
+* Menggunakan tag <ul> untuk mendefinisikan daftar.
+* Setiap item dalam daftar ditandai dengan tag <li>.
+* Item ditampilkan dengan tanda titik (bullet) secara default.
+### Daftar Berurutan (Ordered List) 
+* Menggunakan tag <ol> untuk mendefinisikan daftar.
+* Setiap item dalam daftar ditandai dengan tag li>.
+* Item ditampilkan dengan nomor urut secara default.
+### Daftar Deskripsi (Description List)
+* Menggunakan tag dl> untuk mendefinisikan daftar.
+* Setiap istilah atau nama ditandai dengan tag dt>.
+* Deskripsi untuk setiap istilah ditandai dengan tag dd>.
+
+## Blok HTML 
+Dalam HTML, elemen dibagi menjadi dua kategori utama berdasarkan perilaku tampilannya: elemen blok dan elemen inline. 
+### Elemen blok 
+* Selalu dimulai pada baris baru.
+* Mengambil lebar penuh yang tersedia (memanjang dari kiri ke kanan).
+* Contoh umum: p> (paragraf) dan div> (pembagi).
+### Elemen Inline:
+* Tidak memulai baris baru; berada dalam baris yang sama dengan konten sebelumnya dan sesudahnya.
+* Hanya mengambil lebar yang diperlukan oleh kontennya.
+* Contoh umum: span> dan a> (tautan).
+### Elemen div> dan span>
+* div>: Elemen blok yang sering digunakan sebagai wadah untuk elemen HTML lainnya.
+* span>: Elemen inline yang digunakan untuk menandai bagian dari teks atau dokumen.
+
+
+## Div HTML 
+Elemen div> dalam HTML berfungsi sebagai wadah (container) untuk elemen-elemen HTML lainnya, memungkinkan pengelompokan konten untuk tujuan pemformatan dan pengaturan tata letak.
+### Karakter Utama 
+* Elemen Blok: Secara default, div> adalah elemen blok, yang berarti ia menempati lebar penuh yang tersedia dan dimulai pada baris baru.
+* Tidak Memiliki Gaya Bawaan: Elemen div> tidak memiliki tampilan atau gaya bawaan, sehingga sering digunakan bersama CSS untuk menambahkan gaya atau tata letak tertentu.
+### Penggunaan Umum 
+* Pengelompokan Konten: Mengelompokkan beberapa elemen menjadi satu bagian untuk mempermudah pengaturan dan penataan.
+* Penerapan Gaya dan Skrip: Menerapkan gaya CSS atau fungsi JavaScript pada sekelompok elemen sekaligus.
+### Penataan Elemen div> Secara Berdampingan 
+* Float: Menggunakan properti float untuk mengatur elemen agar mengapung di sebelah kiri atau kanan.
+* Inline-Block: Mengubah tampilan elemen menjadi inline-block sehingga elemen tetap sebagai blok tetapi dapat berada dalam satu baris.
+* Flexbox: Menggunakan model tata letak fleksibel untuk mengatur elemen dalam baris atau kolom yang fleksibel.
+* Grid: Menggunakan model tata letak grid untuk mengatur elemen dalam baris dan kolom yang terstruktur.
+
+## Atribut Kelas HTML 
+Atribut class dalam HTML digunakan untuk menetapkan satu atau lebih nama kelas pada elemen, yang memungkinkan pengelompokan elemen untuk tujuan styling dengan CSS atau manipulasi dengan JavaScript. 
+### Penggunaan Atribut 
+* CSS Styling: Dengan menetapkan kelas pada elemen, Anda dapat menerapkan gaya CSS yang konsisten pada semua elemen dengan kelas yang sama.
+* JavaScript Manipulation: JavaScript dapat menggunakan nama kelas untuk mengakses dan memanipulasi elemen-elemen tertentu dalam dokumen.
+### Sintaks Penulisan Kelas dalam CSS 
+Untuk mendefinisikan sebuah kelas dalam CSS, gunakan tanda titik (.) diikuti oleh nama kelas, kemudian tentukan properti dan nilainya dalam kurung kurawal. 
+### Catatan Penting 
+* Case Sensitivity: Nama kelas bersifat case-sensitive, sehingga class="contoh" dan class="Contoh" dianggap berbeda.
+* Penggunaan pada Elemen Berbeda: Berbagai elemen HTML dapat memiliki nama kelas yang sama, memungkinkan penerapan gaya yang seragam pada elemen-elemen tersebut.
+* Multiple Classes: Sebuah elemen dapat memiliki lebih dari satu kelas dengan cara menuliskannya secara berurutan dan dipisahkan oleh spasi dalam atribut class.
+
+## Atribut Id HTML 
+Atribut id dalam HTML digunakan untuk memberikan identifikasi unik pada elemen tertentu dalam sebuah dokumen. Nilai dari atribut id harus unik di seluruh dokumen HTML, sehingga tidak boleh ada dua elemen dengan id yang sama. 
+### Fungsi Utama 
+* Penghubung ke CSS: Atribut id memungkinkan penerapan gaya spesifik pada elemen tertentu melalui CSS.
+* Interaksi dengan JavaScript: JavaScript dapat menggunakan id untuk mengakses dan memanipulasi elemen tertentu dalam dokumen.
+* Pembuatan Bookmark HTML: Atribut id dapat digunakan untuk membuat penanda (bookmark) dalam halaman, memungkinkan tautan langsung ke bagian tertentu dari halaman tersebut.
+
+## Iframe HTML 
+Elemen iframe> dalam HTML digunakan untuk menampilkan sebuah halaman web di dalam halaman web lainnya.
+### Sintaks Dasar 
+* src: Menentukan URL dari halaman yang akan ditampilkan di dalam iframe.
+* title: Memberikan deskripsi tentang konten iframe, penting untuk aksesibilitas.
+### Atribut Penting 
+* height dan width: Menentukan tinggi dan lebar iframe.
+* style: Dapat digunakan untuk mengatur gaya CSS, seperti menghapus atau menyesuaikan border.

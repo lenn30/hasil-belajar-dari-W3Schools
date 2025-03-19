@@ -372,7 +372,7 @@ Elemen-elemen semantik dalam HTML5 memberikan makna yang jelas pada struktur hal
 * article>: Konten independen yang bisa berdiri sendiri, seperti posting blog atau artikel berita.
 * aside>: Konten sampingan, seperti sidebar atau informasi tambahan.
 * footer>: Bagian bawah halaman yang biasanya berisi informasi hak cipta, tautan kebijakan privasi, atau informasi kontak.
-*figure> dan <figcaption>: Digunakan untuk menyertakan gambar atau ilustrasi beserta keterangan atau caption
+* figure> dan <figcaption>: Digunakan untuk menyertakan gambar atau ilustrasi beserta keterangan atau caption
  
 ## Panduan gaya HTML 
 Dalam HTML5, sintaks penulisan kode telah disederhanakan untuk memudahkan pengembang dalam membuat halaman web yang lebih efisien dan terstruktur. 
@@ -431,3 +431,6 @@ XHTML (Extensible HyperText Markup Language) adalah versi HTML yang lebih ketat 
 * Elemen Wajib: Tag <html>, <head>, <title>, dan <body> harus ada dalam dokumen XHTML.
 * Penulisan Elemen: Semua elemen harus ditulis dalam huruf kecil dan ditutup dengan benar.
 * Penulisan Atribut: Nama atribut harus dalam huruf kecil, nilainya harus diberi tanda kutip, dan minimisasi atribut tidak diperbolehkan.
+
+
+
